@@ -34,7 +34,7 @@ export const updateProduct = async (req, res) => {
     }
     try {
         const updatedProduct = await Product.findByIdAndUpdate(req.params.id, req.body, {new: true});
-        res.status(200).json({success: true, message: "Product updated successfully", product: updatedProduct});
+        res.status(200).json({success: true, message: "Product updated successfully", data: updatedProduct});
     } catch (error) {
         console.error("Error in put product: ", error.message);
         res.status(500).json({success: false, message: "Server error."});;
@@ -47,7 +47,7 @@ export const deleteProduct = async (req, res) => {
     }
     try {
         const deletedProduct = await Product.findByIdAndDelete(req.params.id);
-        res.status(200).json({success: true, message: "Product deleted successfully", product: deletedProduct});
+        res.status(200).json({success: true, message: "Product deleted successfully", data: deletedProduct});
     } catch (error) {
         console.error("Error in delete product: ", error.message);
         res.status(500).json({success: false, message: "Product not found."});;
