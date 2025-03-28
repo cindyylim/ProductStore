@@ -21,7 +21,7 @@ A full-stack web application for managing products with a modern, responsive UI 
 - Framer Motion
 - React DOM
 - Next Themes
-- zustand
+- Zustand for state management
 
 ### Backend
 - Node.js
