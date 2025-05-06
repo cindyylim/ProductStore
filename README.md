@@ -78,22 +78,6 @@ The application will be available at:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:5000
 
-## Project Structure
-
-```
-productPage/
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── store/        # State management
-│   │   └── ...
-│   └── package.json
-├── server/                # Backend Node.js/Express application
-│   ├── server.js
-│   └── ...
-├── .env                   # Environment variables
-└── package.json
-```
 
 ## Contributing
 
